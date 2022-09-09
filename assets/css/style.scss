@@ -1,0 +1,265 @@
+$heading-font-family: "Sen", sans-serif;
+$text-font-family: "Lato", sans-serif;
+$background-color: #15e0c0;
+$text-color: #1c2932;
+$placeholder-color: #949494;
+$white-color: #fff;
+$black-color: #000;
+$gray-color:#5C5C5C;
+$button-bg-color: #1c2932;
+$input-bg-color: #fcfcfc;
+body {
+  background-color: $background-color;
+  // background-image: url(../images/bg.png);
+  // background-size: cover;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($color: $button-bg-color, $alpha: 0.6);
+}
+header {
+  .bx-navbar {
+    background-color: transparent !important;
+    padding: 39px 0 16px;
+    @media (max-width: 991px) {
+      padding-top: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: $background-color !important;
+      z-index: 999;
+      height: 77px;
+    }
+    .navbar-brand {
+      outline: 0 !important;
+      @media (max-width: 991px) {
+        width: calc(100% - 80px);
+      }
+      img {
+        height: 34px;
+      }
+    }
+    .navbar-toggler {
+      box-shadow: none !important;
+      outline: 0 !important;
+      background-color: $white-color;
+      border-radius: 10px;
+    }
+    @media (max-width: 991px) {
+      .navbar-collapse {
+        background-color: $white-color;
+        margin-top: 10px;
+        border-radius: 16px;
+        padding: 16px 0;
+        max-width: 200px;
+        margin-left: auto;
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding-left: 32px;
+          padding-right: 32px;
+          font-family: $heading-font-family;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: $text-color;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  min-height: calc(100vh - 294px);
+  @media (max-width: 991px) {
+    text-align: center;
+    padding-top: 80px;
+  }
+  .bx-banner {
+    .bx-banner-heading {
+      margin-top: 11.5%;
+      font-family: $heading-font-family;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 77px;
+      letter-spacing: -0.02em;
+      color: $text-color;
+      margin-bottom: 10px;
+      white-space: nowrap;
+      @media (max-width: 1399px) {
+        font-size: 50px;
+        line-height: 60px;
+      }
+      @media (max-width: 576px) {
+        font-size: 32px;
+        line-height: 52px;
+      }
+    }
+    .bx-banner-description {
+      font-family: $text-font-family;      
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 144%;
+      letter-spacing: 0.01em;
+      color: $gray-color;
+      margin-bottom: 56px;
+      @media (max-width: 576px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+    .bx-banner-form {
+      display: inline-flex;
+      width: 441px;
+      max-width: 100%;
+      .form-control {
+        height: 54px;
+        border-radius: 8px;
+        padding: 16px 20px;
+        height: 54px;
+        font-family: $text-font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-color;
+        background: $input-bg-color;
+        border-radius: 8px 0px 0px 8px;
+        outline: 0 !important;
+        box-shadow: none !important;
+        transition: all ease-in-out 0.3s;
+        &::placeholder {
+          color: $placeholder-color;
+        }
+        &:focus {
+          border-color: $button-bg-color;
+        }
+      }
+      .btn {
+        padding: 16px 24px;
+        outline: 0 !important;
+        box-shadow: none !important;
+        font-family: $text-font-family;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: $white-color;
+        background: $button-bg-color;
+        border-radius: 0px 8px 8px 0px;
+        white-space: nowrap;
+        height: 54px;
+      }
+    }
+    .bx-banner-image {
+      margin-bottom: -300px;
+      max-height: 85vh;
+      animation-name: bounce;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+        width: 550px;
+      }
+      @media(max-width:767px){
+        width: 358px;
+      }
+    }
+  }
+}
+footer {
+  padding: 50px 0;
+  .bx-socials {
+    margin-bottom: 31px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+      img {
+        transition: all ease-in-out 0.3s;
+        transform-origin: center center;
+      }
+    }
+  }
+  .bx-footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $text-font-family;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+    gap: 10px;
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      display: inline-flex;
+      align-items: center;
+      @media (max-width: 991px) {
+        justify-content: center;
+      }
+      li {
+        a {
+          text-decoration: none;
+          padding: 0 10px;
+          color: $text-color;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    --bs-gutter-x: 40px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
