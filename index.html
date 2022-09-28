@@ -241,19 +241,21 @@
             var email = document.getElementById("mce-EMAIL").value;
             if(validateEmail(email)) {
                 $.ajax({
-                url: "https://subscribe.metabase.build",
-                type: "POST",
-                data: {
-                    "email": email,
-                    "project": "Blox3"
-                },
-                contentType: "application/json",
-                success: function (data) {
-                    console.log("add");
-                    alert("add");
-                }
-            });
-            openVerifyInNewTab("mce-EMAIL");
+                    type: 'post',
+                    url: 'https://subscribe.metabase.build',
+                    data: JSON.stringify({
+                        email: email,
+                        project: 'Blox3'
+                    }),
+                    contentType: "application/json; charset=utf-8",
+                    success: function (res) {
+                        alert("success");
+                    },
+                    error: function (err) {
+                        alert("erro");
+                    }
+                });
+                openVerifyInNewTab("mce-EMAIL");
             }
         });
   
