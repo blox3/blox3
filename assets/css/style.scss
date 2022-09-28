@@ -98,7 +98,7 @@ main {
     padding-top: 80px;
   }
   .bx-banner {
-    padding-bottom: 113px;
+    padding-bottom: 30px;
     .bx-banner-heading {
       margin-top: 11.5%;
       font-family: $heading-font-family;
@@ -107,7 +107,7 @@ main {
       line-height: 1.06;
       letter-spacing: -0.02em;
       color: $text-color;
-      margin-bottom: 88px;
+      margin-bottom: 50px;
       white-space: nowrap;
       span{
         font-family: $bitter-font-family;
@@ -197,7 +197,7 @@ main {
 footer {
   padding: 50px 0;
   .bx-socials {
-    margin-bottom: 31px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -214,6 +214,7 @@ footer {
       img {
         transition: all ease-in-out 0.3s;
         transform-origin: center center;
+        max-height: 38px;
       }
     }
   }

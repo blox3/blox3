@@ -86,7 +86,7 @@ main {
   }
 }
 main .bx-banner {
-  padding-bottom: 113px;
+  padding-bottom: 30px;
 }
 main .bx-banner .bx-banner-heading {
   margin-top: 11.5%;
@@ -96,7 +96,7 @@ main .bx-banner .bx-banner-heading {
   line-height: 1.06;
   letter-spacing: -0.02em;
   color: #1c2932;
-  margin-bottom: 88px;
+  margin-bottom: 50px;
   white-space: nowrap;
 }
 main .bx-banner .bx-banner-heading span {
@@ -206,7 +206,7 @@ footer {
   padding: 50px 0;
 }
 footer .bx-socials {
-  margin-bottom: 31px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -225,6 +225,7 @@ footer .bx-socials a:hover img {
 footer .bx-socials a img {
   transition: all ease-in-out 0.3s;
   transform-origin: center center;
+  max-height: 38px;
 }
 footer .bx-footer-bottom {
   display: flex;
