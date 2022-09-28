@@ -1,5 +1,6 @@
 body {
-  background-color: #15e0c0;
+  background: url(../images/banner-bg.png) no-repeat center top, #15e0c0;
+  background-size: cover;
 }
 
 ::-webkit-scrollbar {
@@ -40,7 +41,7 @@ header .bx-navbar .navbar-brand {
   }
 }
 header .bx-navbar .navbar-brand img {
-  height: 34px;
+  /* height: 34px; */
 }
 header .bx-navbar .navbar-toggler {
   box-shadow: none !important;
@@ -84,16 +85,24 @@ main {
     padding-top: 80px;
   }
 }
+main .bx-banner {
+  padding-bottom: 30px;
+}
 main .bx-banner .bx-banner-heading {
   margin-top: 11.5%;
   font-family: "Sen", sans-serif;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 77px;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1.06;
   letter-spacing: -0.02em;
   color: #1c2932;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   white-space: nowrap;
+}
+main .bx-banner .bx-banner-heading span {
+  font-family: "Bitter", serif;
+  font-weight: 700;
+  font-style: italic;
 }
 @media (max-width: 1399px) {
   main .bx-banner .bx-banner-heading {
@@ -114,7 +123,7 @@ main .bx-banner .bx-banner-description {
   line-height: 144%;
   letter-spacing: 0.01em;
   color: #5C5C5C;
-  margin-bottom: 56px;
+  margin-bottom: 35px;
 }
 @media (max-width: 576px) {
   main .bx-banner .bx-banner-description {
@@ -197,7 +206,7 @@ footer {
   padding: 50px 0;
 }
 footer .bx-socials {
-  margin-bottom: 31px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 30px;
@@ -216,6 +225,7 @@ footer .bx-socials a:hover img {
 footer .bx-socials a img {
   transition: all ease-in-out 0.3s;
   transform-origin: center center;
+  max-height: 38px;
 }
 footer .bx-footer-bottom {
   display: flex;
