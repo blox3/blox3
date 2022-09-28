@@ -40,7 +40,7 @@ header .bx-navbar .navbar-brand {
   }
 }
 header .bx-navbar .navbar-brand img {
-  height: 34px;
+  /* height: 34px; */
 }
 header .bx-navbar .navbar-toggler {
   box-shadow: none !important;
