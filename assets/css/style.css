@@ -175,7 +175,7 @@ main .bx-banner .bx-banner-form {
 }
 @media (max-width: 576px) {
   main .bx-banner .bx-banner-form {
-    width: auto;
+    width: 100%;
   }
 }
 main .bx-banner .bx-banner-form .form-control {
