@@ -46,7 +46,7 @@ header {
     }
     .navbar-brand {
       outline: 0 !important;
-      @media (max-width: 991px) {
+      @media (max-width: 767px) {
         width: calc(100% - 80px);
       }
       img {
@@ -60,7 +60,7 @@ header {
       border-radius: 10px;
       border:none;
     }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .navbar-collapse {
         background-color: $white-color;
         margin-top: 10px;
@@ -77,9 +77,18 @@ header {
         }
       }
     }
-    @media (max-width: 767px) {
-      .navbar-expand-lg .navbar-nav {
+    @media (min-width: 767px) {
+      .navbar-nav {
         flex-direction: row;
+      }
+    }
+    @media (min-width: 767px){
+      .navbar-toggler {
+          display: none;
+      }
+      .navbar-collapse {
+          display: flex!important;
+          flex-basis: auto;
       }
     }
     .navbar-nav {
