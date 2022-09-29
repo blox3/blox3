@@ -75,10 +75,10 @@
         <div class="bx-banner">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-xl-7 col-lg-7 text-lg-start text-center">
-                        <h1 class="bx-banner-heading" data-aos="fade-up"><span>Great</span> yield <br>
-                            from <span>real</span> businesses</h1>
-                        <div class="bx-banner-description" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-xl-7 col-lg-7 text-lg-start text-center justify-content-between">
+                        <h1 class="bx-banner-heading" data-aos="fade-up"><span>Great</span> yield <br class="d-none d-lg-block">
+                            from <br class="d-block d-lg-none"><span>real</span> businesses</h1>
+                        <div class="bx-banner-description col-lg-12 col-md-10" data-aos="fade-up" data-aos-delay="100">
                             Blox3 provides attractive & sustainable yield by removing the bank as a costly cross border bottleneck, providing capital directly to real world businesses.
                         </div>
                         <div class="bx-banner-form" data-aos="fade-up" data-aos-delay="200">
@@ -159,6 +159,17 @@
                                         padding: 16px 20px;
                                     }
 
+                                    #mc_embed_signup form .d-flex{
+                                        flex-wrap: wrap;
+                                    }
+                                    #mc_embed_signup .mc-field-group.input-group input{
+                                        border-radius: 8px;
+                                    }
+                                    #mc_embed_signup .button{
+                                        border-radius: 8px;
+                                        padding: 16px 20px;
+                                        margin-top: 10px;
+                                    }
                                 }
                             </style>
                             <div id="mc_embed_signup">
@@ -235,6 +246,19 @@
     <script src="assets/plugins/aos/aos.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/submit-email.js"></script>
+    <script>
+        window.addEventListener("scroll", (event) => {
+            setFixedHeader()
+        });
+
+        function setFixedHeader() {
+            if (window.scrollY > 77) {
+                $('.bx-navbar').addClass('sticky');
+            } else {
+                $('.bx-navbar').removeClass('sticky');
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -14,6 +14,11 @@ body {
   background-size: cover;
   // background-image: url(../images/bg.png);
   // background-size: cover;
+  @media (max-width: 991px){
+    background: url(../images/banner-bg.png) no-repeat right 40% top, #15e0c0;
+    background-size: auto 100%;
+    
+  }
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -36,7 +41,6 @@ header {
       top: 0;
       left: 0;
       width: 100%;
-      background-color: $background-color !important;
       z-index: 999;
       height: 77px;
     }
@@ -52,8 +56,9 @@ header {
     .navbar-toggler {
       box-shadow: none !important;
       outline: 0 !important;
-      background-color: $white-color;
+      background-color: transparent;
       border-radius: 10px;
+      border:none;
     }
     @media (max-width: 991px) {
       .navbar-collapse {
@@ -70,6 +75,11 @@ header {
             }
           }
         }
+      }
+    }
+    @media (max-width: 767px) {
+      .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
       }
     }
     .navbar-nav {
@@ -90,15 +100,26 @@ header {
       }
     }
   }
+  .bx-navbar.sticky{
+    @media (max-width: 991px) {
+      background-color: $background-color !important;
+    }
+  }
 }
 main {
   min-height: calc(100vh - 294px);
   @media (max-width: 991px) {
     text-align: center;
-    padding-top: 80px;
   }
   .bx-banner {
     padding-bottom: 30px;
+    @media (max-width: 991px) {
+      padding-top: 80px;
+      padding-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      
+    }
     .bx-banner-heading {
       margin-top: 11.5%;
       font-family: $heading-font-family;
@@ -115,12 +136,12 @@ main {
         font-style: italic;
       }
       @media (max-width: 1399px) {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 60px;
       }
       @media (max-width: 576px) {
-        font-size: 32px;
-        line-height: 52px;
+        font-size: 40px;
+        text-align: left;
+        margin-bottom: 30px;
       }
     }
     .bx-banner-description {
@@ -131,15 +152,23 @@ main {
       letter-spacing: 0.01em;
       color: $gray-color;
       margin-bottom: 35px;
+      @media (max-width: 1399px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
       @media (max-width: 576px) {
         font-size: 22px;
         line-height: 30px;
+        text-align: left;
       }
     }
     .bx-banner-form {
       display: inline-flex;
       width: 441px;
       max-width: 100%;
+      @media (max-width: 576px) {
+        width: auto;
+      }
       .form-control {
         height: 54px;
         border-radius: 8px;
@@ -187,6 +216,7 @@ main {
       @media (max-width: 991px) {
         margin-bottom: 0;
         width: 550px;
+        margin-top: 30px;
       }
       @media(max-width:767px){
         width: 358px;
