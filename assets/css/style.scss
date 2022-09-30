@@ -67,7 +67,11 @@ header {
         border-radius: 16px;
         padding: 16px 0;
         max-width: 200px;
+        min-width: 200px;
         margin-left: auto;
+        position: absolute;
+        top: 60px;
+        right: 20px;
         .navbar-nav {
           .nav-item {
             .nav-link {
@@ -117,6 +121,7 @@ header {
 }
 main {
   min-height: calc(100vh - 294px);
+  overflow: hidden;
   @media (max-width: 991px) {
     text-align: center;
   }
