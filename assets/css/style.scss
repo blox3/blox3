@@ -10,12 +10,12 @@ $gray-color:#5C5C5C;
 $button-bg-color: #1c2932;
 $input-bg-color: #fcfcfc;
 body {
-  background: url(../images/banner-bg.png)no-repeat center top , $background-color;
+  background: url(../images/banner-bg.webp)no-repeat center top , $background-color;
   background-size: cover;
   // background-image: url(../images/bg.png);
   // background-size: cover;
   @media (max-width: 991px){
-    background: url(../images/banner-bg.png) no-repeat right 40% top, #15e0c0;
+    background: url(../images/banner-bg.webp) no-repeat right 40% top, #15e0c0;
     background-size: auto 100%;
     
   }
@@ -74,7 +74,7 @@ header {
         right: 20px;
         //transition: all 0.2s linear 0.1s;
         //visibility: hidden;
-        display: none;
+        //display: none;
         .navbar-nav {
           .nav-item {
             .nav-link {
@@ -85,15 +85,15 @@ header {
       }
       .navbar-collapse.show{
         //visibility: visible;
-        display: block;
+        //display: block;
       }
     }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       .navbar-nav {
         flex-direction: row;
       }
     }
-    @media (min-width: 767px){
+    @media (min-width: 768px){
       .navbar-toggler {
           display: none;
       }
@@ -112,7 +112,7 @@ header {
           font-size: 18px;
           line-height: 22px;
           color: $text-color;
-          transition: all ease-in-out 0.3s;
+          //transition: all ease-in-out 0.3s;
           &:hover {
             color: $white-color;
           }
