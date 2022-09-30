@@ -166,7 +166,7 @@ main {
       letter-spacing: 0.01em;
       color: $gray-color;
       margin-bottom: 35px;
-      @media (max-width: 1399px) {
+      @media (max-width: 767px) {
         margin-left: auto;
         margin-right: auto;
       }
@@ -230,7 +230,7 @@ main {
       height: auto;
       @media (max-width: 991px) {
         margin-bottom: 0;
-        width: 550px;
+        width: 350px;
         margin-top: 30px;
       }
       @media(max-width:767px){
@@ -246,7 +246,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       justify-content: center;
     }
     a {
@@ -272,7 +272,7 @@ footer {
     line-height: 22px;
     color: $text-color;
     gap: 10px;
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       justify-content: center;
     }
     ul {
@@ -281,7 +281,7 @@ footer {
       list-style: none;
       display: inline-flex;
       align-items: center;
-      @media (max-width: 991px) {
+      @media (max-width: 768px) {
         justify-content: center;
       }
       li {

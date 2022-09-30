@@ -161,7 +161,7 @@ main .bx-banner .bx-banner-description {
   color: #5C5C5C;
   margin-bottom: 35px;
 }
-@media (max-width: 1399px) {
+@media (max-width: 767px) {
   main .bx-banner .bx-banner-description {
     margin-left: auto;
     margin-right: auto;
@@ -242,7 +242,7 @@ main .bx-banner .bx-banner-image {
 @media (max-width: 991px) {
   main .bx-banner .bx-banner-image {
     margin-bottom: 0;
-    width: 550px;
+    width: 350px;
     margin-top: 30px;
   }
 }
@@ -261,7 +261,7 @@ footer .bx-socials {
   align-items: center;
   gap: 30px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   footer .bx-socials {
     justify-content: center;
   }
@@ -287,7 +287,7 @@ footer .bx-footer-bottom {
   color: #1c2932;
   gap: 10px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   footer .bx-footer-bottom {
     justify-content: center;
   }
@@ -299,7 +299,7 @@ footer .bx-footer-bottom ul {
   display: inline-flex;
   align-items: center;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   footer .bx-footer-bottom ul {
     justify-content: center;
   }
