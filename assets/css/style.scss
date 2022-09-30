@@ -72,6 +72,9 @@ header {
         position: absolute;
         top: 60px;
         right: 20px;
+        //transition: all 0.2s linear 0.1s;
+        //visibility: hidden;
+        display: none;
         .navbar-nav {
           .nav-item {
             .nav-link {
@@ -79,6 +82,10 @@ header {
             }
           }
         }
+      }
+      .navbar-collapse.show{
+        //visibility: visible;
+        display: block;
       }
     }
     @media (min-width: 767px) {
