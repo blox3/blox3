@@ -10,10 +10,15 @@ $gray-color:#5C5C5C;
 $button-bg-color: #1c2932;
 $input-bg-color: #fcfcfc;
 body {
-  background: url(../images/banner-bg.png)no-repeat center top , $background-color;
+  background: url(../images/banner-bg.webp)no-repeat center top , $background-color;
   background-size: cover;
   // background-image: url(../images/bg.png);
   // background-size: cover;
+  @media (max-width: 991px){
+    background: url(../images/banner-bg.webp) no-repeat right 40% top, #15e0c0;
+    background-size: auto 100%;
+    
+  }
 }
 ::-webkit-scrollbar {
   width: 6px;
@@ -36,13 +41,12 @@ header {
       top: 0;
       left: 0;
       width: 100%;
-      background-color: $background-color !important;
       z-index: 999;
       height: 77px;
     }
     .navbar-brand {
       outline: 0 !important;
-      @media (max-width: 991px) {
+      @media (max-width: 767px) {
         width: calc(100% - 80px);
       }
       img {
@@ -52,24 +56,43 @@ header {
     .navbar-toggler {
       box-shadow: none !important;
       outline: 0 !important;
-      background-color: $white-color;
+      background-color: transparent;
       border-radius: 10px;
+      border:none;
     }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       .navbar-collapse {
         background-color: $white-color;
         margin-top: 10px;
         border-radius: 16px;
-        padding: 16px 0;
         max-width: 200px;
+        min-width: 200px;
         margin-left: auto;
+        position: absolute;
+        top: 60px;
+        right: 20px;
         .navbar-nav {
+          padding: 16px 0;
           .nav-item {
             .nav-link {
               font-weight: bold;
             }
           }
         }
+      }
+    }
+    @media (min-width: 768px) {
+      .navbar-nav {
+        flex-direction: row;
+      }
+    }
+    @media (min-width: 768px){
+      .navbar-toggler {
+          display: none;
+      }
+      .navbar-collapse {
+          display: flex!important;
+          flex-basis: auto;
       }
     }
     .navbar-nav {
@@ -82,23 +105,35 @@ header {
           font-size: 18px;
           line-height: 22px;
           color: $text-color;
-          transition: all ease-in-out 0.3s;
+          //transition: all ease-in-out 0.3s;
           &:hover {
-            color: $white-color;
+            opacity: 0.6;
           }
         }
       }
     }
   }
+  .bx-navbar.sticky{
+    @media (max-width: 991px) {
+      background-color: $background-color !important;
+    }
+  }
 }
 main {
   min-height: calc(100vh - 294px);
+  overflow: hidden;
   @media (max-width: 991px) {
     text-align: center;
-    padding-top: 80px;
   }
   .bx-banner {
     padding-bottom: 30px;
+    @media (max-width: 991px) {
+      padding-top: 80px;
+      padding-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      
+    }
     .bx-banner-heading {
       margin-top: 11.5%;
       font-family: $heading-font-family;
@@ -115,12 +150,12 @@ main {
         font-style: italic;
       }
       @media (max-width: 1399px) {
-        font-size: 50px;
-        line-height: 60px;
+        font-size: 60px;
       }
       @media (max-width: 576px) {
-        font-size: 32px;
-        line-height: 52px;
+        font-size: 40px;
+        text-align: left;
+        margin-bottom: 30px;
       }
     }
     .bx-banner-description {
@@ -131,15 +166,23 @@ main {
       letter-spacing: 0.01em;
       color: $gray-color;
       margin-bottom: 35px;
+      @media (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
       @media (max-width: 576px) {
         font-size: 22px;
         line-height: 30px;
+        text-align: left;
       }
     }
     .bx-banner-form {
       display: inline-flex;
       width: 441px;
       max-width: 100%;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
       .form-control {
         height: 54px;
         border-radius: 8px;
@@ -179,14 +222,16 @@ main {
     }
     .bx-banner-image {
       margin-bottom: -300px;
-      max-height: 85vh;
       animation-name: bounce;
       animation-timing-function: linear;
       animation-duration: 2s;
       animation-iteration-count: infinite;
+      width: 100%;
+      height: auto;
       @media (max-width: 991px) {
         margin-bottom: 0;
-        width: 550px;
+        width: 350px;
+        margin-top: 30px;
       }
       @media(max-width:767px){
         width: 358px;
@@ -201,7 +246,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 30px;
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       justify-content: center;
     }
     a {
@@ -227,7 +272,7 @@ footer {
     line-height: 22px;
     color: $text-color;
     gap: 10px;
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
       justify-content: center;
     }
     ul {
@@ -236,7 +281,7 @@ footer {
       list-style: none;
       display: inline-flex;
       align-items: center;
-      @media (max-width: 991px) {
+      @media (max-width: 768px) {
         justify-content: center;
       }
       li {
@@ -246,7 +291,7 @@ footer {
           color: $text-color;
           transition: all ease-in-out 0.3s;
           &:hover {
-            color: $white-color;
+            opacity: 0.6;
           }
         }
       }
