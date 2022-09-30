@@ -98,7 +98,7 @@ header .bx-navbar .navbar-nav .nav-item .nav-link {
   color: #1c2932;
 }
 header .bx-navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #fff;
+  opacity: 0.6;
 }
 @media (max-width: 991px) {
   header .bx-navbar.sticky {
