@@ -317,6 +317,7 @@ header {
   }
   .bx-navbar.sticky{
     background-color: $background-color !important;
+    padding: 20px 0;
     @media (max-width: 991px) {
       background-color: $background-color !important;
     }
@@ -560,14 +561,12 @@ main {
       padding: 50px 40px;
       border: 1px solid #CBCBD5;
       text-align: left;
+      transition: all ease-in-out 0.3s;
       @media (max-width: 767px) {
         padding: 26px 32px;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-      }
-      &:hover{
-        border: 1px solid #14DFBE;
       }
       .why-blox3-icon{
         margin: 12px 0 0 0;
@@ -594,9 +593,9 @@ main {
           line-height: 34px;
           
         }
-        &:hover{
+        /* &:hover{
           color: #14DFBE;
-        }
+        } */
       }
       .card-body{
         font-family: $text-font-family;
@@ -606,11 +605,34 @@ main {
         padding: 0;
         border: none;
         color: $text-color-disc;
+        --bs-card-bg: none;
         @media (max-width: 767px) {
           font-size: 14px;
           margin: 12px 0 0 0;
         }
       }
+      &:hover{
+        border: 1px solid #14DFBE;
+        background-image: linear-gradient(to right, #14DFBE, #1AD6CB, #2EB8F7);
+        color: $white-color;
+        .why-blox3-icon{
+          color: $white-color;
+          svg{
+            path{
+              fill: $white-color;
+            }
+          }
+        }
+        button{
+          color: $white-color;
+        }
+        .card-body{
+          color: $white-color;
+        }
+      }
+      
+      
+      
     }
     @media (max-width: 767px) {
       .box + .box{
@@ -730,6 +752,11 @@ main {
       left: 0;
       right: 20px;
       bottom: 0;
+      animation-name: rightToLeft;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
       @media (max-width:992px){
         background-size: 100%;
         left: auto;
@@ -747,6 +774,11 @@ main {
       left: 16px;
       right: 0;
       bottom: 65px;
+      animation-name: leftToRight;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
       @media (max-width:992px){
         background-size: 100%;
         right: auto;
@@ -774,6 +806,53 @@ main {
         line-height: 38px;
         letter-spacing: -0.02em;
         margin-bottom: 115px;
+      }
+    }
+    .year{
+      overflow:auto;
+      display:inline-block;
+      height:72px;
+      @media (max-width: 992px) {
+        height: 60px;
+      }
+      @media (max-width: 767px) {
+        height: 38px;
+      }
+      /* width */
+      &::-webkit-scrollbar {
+        display:none;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        display:none;
+      }
+      
+      /* Handle */
+      &::-webkit-scrollbar-thumb { 
+        display:none;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        display:none;
+      }
+      ul{
+        animation-name: hovered;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+      }
+    }
+    @keyframes hovered {
+      from {
+        transform:translateY(0)
+      }
+      to {
+        transform:translateY(-100%)
       }
     }
     .bx-group{
@@ -850,6 +929,42 @@ main {
               line-height: 17px;
               margin-bottom: 0;
             }
+            .number{
+              overflow:auto;
+              display:inline-block;
+              height:34px;
+              @media (max-width: 767px) {
+                height: 17px;
+              }
+              /* width */
+              &::-webkit-scrollbar {
+                display:none;
+              }
+        
+              /* Track */
+              &::-webkit-scrollbar-track {
+                display:none;
+              }
+              
+              /* Handle */
+              &::-webkit-scrollbar-thumb { 
+                display:none;
+              }
+        
+              /* Handle on hover */
+              &::-webkit-scrollbar-thumb:hover {
+                display:none;
+              }
+              ul{
+                animation-name: hovered;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; 
+                list-style: none;
+                margin-bottom: 0;
+                padding-left: 0;
+              }
+            }
           }
         }
       }
@@ -917,6 +1032,42 @@ main {
               font-size: 16px;
               line-height: 19px;
               margin-bottom: 0;
+            }
+            .number{
+              overflow:auto;
+              display:inline-block;
+              height:58px;
+              @media (max-width: 767px) {
+                height: 19px;
+              }
+              /* width */
+              &::-webkit-scrollbar {
+                display:none;
+              }
+        
+              /* Track */
+              &::-webkit-scrollbar-track {
+                display:none;
+              }
+              
+              /* Handle */
+              &::-webkit-scrollbar-thumb { 
+                display:none;
+              }
+        
+              /* Handle on hover */
+              &::-webkit-scrollbar-thumb:hover {
+                display:none;
+              }
+              ul{
+                animation-name: hovered;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear; 
+                list-style: none;
+                margin-bottom: 0;
+                padding-left: 0;
+              }
             }
           }
         }
@@ -1063,6 +1214,8 @@ main {
       display: inline-flex;
       width: 450px;
       max-width: 100%;
+      position: relative;
+      z-index: 0;
       @media (max-width: 767px){
         margin-bottom: 24px;
         .mc_embed_signup .mc-field-group.input-group input{
@@ -1359,5 +1512,21 @@ footer {
 
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
   }
 }
