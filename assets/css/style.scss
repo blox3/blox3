@@ -22,7 +22,6 @@ body {
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: rgba($color: $button-bg-color, $alpha: 0.6);
 }
@@ -1272,14 +1271,11 @@ footer {
   text-decoration: none;
 }
 .modal{
-  //width: 840px;
   --bs-modal-width: 840px;
- 
   .modal-content{
     border-radius: 16px;
     background-image: linear-gradient(to right, #14DFBE, #1AD6CB, #2EB8F7);
     position: relative;
-    
     &::before{
       position: absolute;
       content: "";
