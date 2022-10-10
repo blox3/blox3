@@ -253,6 +253,7 @@ header {
       border-radius: 10px;
       border:none;
       z-index: 9;
+      padding: 0;
     }
     .navbar-toggler[aria-expanded="true"]{
       .navbar-toggler-icon{
@@ -308,7 +309,6 @@ header {
           font-size: 18px;
           line-height: 22px;
           color: $text-color;
-          //transition: all ease-in-out 0.3s;
           &:hover {
             font-weight: 900;
           }
