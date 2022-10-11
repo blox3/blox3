@@ -30,3 +30,18 @@ $('#to_top').click(function (e) {
         scrollTop: 0
     }, 500);
 })
+/* $(".why-blox3 .box button").click(function(){
+    $(".why-blox3 .box .collapse").removeClass("show");
+    $(".why-blox3 .box").removeClass("active");
+    
+    
+    if($(this).parent().hasClass("active")==false){
+        $(this).parent().addClass("active");
+        $(this).parent().find(".collapse").addClass("show");
+        
+    }
+    else{
+        $(this).parent().removeClass("active");
+        $(this).parent().find(".collapse").removeClass("show");
+    }
+}); */
