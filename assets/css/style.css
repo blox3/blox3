@@ -118,6 +118,11 @@ body {
   border-radius: 8px 0px 0px 8px;
   padding: 16px 20px 16px 20px;
 }
+.mc_embed_signup .mc-field-group.input-group input:focus {
+  border-color: #1c2932;
+  outline: none;
+  box-shadow: none;
+}
 .mc_embed_signup .mc-embedded-subscribe-form div.mce_inline_error {
   padding: 0;
   font-size: 13px;
@@ -958,7 +963,7 @@ main .key-features .row2:before {
   background: url("../images/line2.png") no-repeat right bottom;
   top: 0;
   left: 0;
-  right: calc(50% - 50px);
+  right: calc(50% - 100px);
   bottom: -70px;
 }
 @media (max-width: 1200px) {
@@ -1801,6 +1806,9 @@ footer .app li {
   margin-right: 17px;
   margin-bottom: 17px;
 }
+footer .app li:hover {
+  opacity: 0.8;
+}
 footer .app li:last-child {
   margin-bottom: 0;
 }
@@ -1865,6 +1873,10 @@ footer .bx-footer-bottom {
 
 .modal {
   --bs-modal-width: 840px;
+}
+.modal .btn-close:focus {
+  outline: none;
+  box-shadow: none;
 }
 .modal .modal-content {
   border-radius: 16px;

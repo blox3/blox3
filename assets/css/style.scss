@@ -126,6 +126,11 @@ body {
     background: #FCFCFC;
     border-radius: 8px 0px 0px 8px;
     padding: 16px 20px 16px 20px;
+    &:focus{
+      border-color: $button-bg-color;
+      outline: none;
+      box-shadow: none;
+    }
   }
   .mc-embedded-subscribe-form div.mce_inline_error {
     padding: 0;
@@ -883,7 +888,7 @@ main {
         background: url("../images/line2.png")no-repeat right bottom;
         top: 0;
         left: 0;
-        right: calc(50% - 50px);
+        right: calc(50% - 100px);
         bottom: -70px;
         @media (max-width: 1200px) {
           background-size: 100%;
@@ -1600,6 +1605,9 @@ footer {
     li{
       margin-right: 17px;
       margin-bottom: 17px;
+      &:hover{
+        opacity: 0.8;
+      }
     }
     li:last-child{
       margin-bottom: 0;
@@ -1663,6 +1671,12 @@ footer {
 }
 .modal{
   --bs-modal-width: 840px;
+  .btn-close{
+    &:focus{
+      outline: none;
+      box-shadow: none;
+    }
+  }
   .modal-content{
     border-radius: 16px;
     background-image: linear-gradient(to right, #14DFBE, #1AD6CB, #2EB8F7);
