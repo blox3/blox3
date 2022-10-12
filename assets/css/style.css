@@ -1097,7 +1097,7 @@ main .how-much .bx-tilte {
 @media (max-width: 767px) {
   main .how-much .bx-tilte {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 50px;
     margin-bottom: 130px;
   }
 }
@@ -1169,6 +1169,9 @@ main .how-much .bx-group {
   main .how-much .bx-group {
     width: 240px;
   }
+}
+main .how-much .bx-group .slick-vertical .slick-slide {
+  width: 100% !important;
 }
 main .how-much .bx-group .price-bank {
   width: 174px;
