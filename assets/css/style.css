@@ -1082,19 +1082,24 @@ main .how-much .bx-tilte {
 @media (max-width: 992px) {
   main .how-much .bx-tilte {
     font-size: 40px;
+    line-height: 60px;
   }
 }
 @media (max-width: 767px) {
   main .how-much .bx-tilte {
     font-size: 40px;
-    line-height: 48px;
+    line-height: 50px;
     margin-bottom: 130px;
   }
+}
+main .how-much .slick-vertical .slick-slide {
+  width: 100% !important;
 }
 main .how-much .year {
   overflow: auto;
   display: inline-block;
   height: 67px;
+  width: 70px !important;
   vertical-align: middle;
   /* width */
   /* Track */
@@ -1103,12 +1108,13 @@ main .how-much .year {
 }
 @media (max-width: 992px) {
   main .how-much .year {
-    height: 60px;
+    height: 64px;
+    width: 52px !important;
   }
 }
 @media (max-width: 767px) {
   main .how-much .year {
-    height: 38px;
+    height: 56px;
   }
 }
 main .how-much .year::-webkit-scrollbar {
@@ -1124,16 +1130,11 @@ main .how-much .year::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 main .how-much .year ul {
-  -webkit-animation-name: hovered;
-          animation-name: hovered;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  /* animation-name: hovered;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  animation-delay: 3s; */
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -1270,16 +1271,11 @@ main .how-much .bx-group .price-bank dl dd .number::-webkit-scrollbar-thumb:hove
   display: none;
 }
 main .how-much .bx-group .price-bank dl dd .number ul {
-  -webkit-animation-name: hovered;
-          animation-name: hovered;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  /* animation-name: hovered;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s; */
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -1388,16 +1384,11 @@ main .how-much .bx-group .price dl dd .number::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 main .how-much .bx-group .price dl dd .number ul {
-  -webkit-animation-name: hovered;
-          animation-name: hovered;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  /* animation-name: hovered;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 3s; */
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
