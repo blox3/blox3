@@ -392,7 +392,7 @@ main .bx-banner {
 }
 main .bx-banner .container {
   padding-top: 175px;
-  padding-bottom: 200px;
+  padding-bottom: 280px;
   position: relative;
 }
 @media (max-width: 991px) {
