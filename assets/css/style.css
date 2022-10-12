@@ -324,8 +324,8 @@ header .bx-navbar .navbar-nav .nav-item .nav-link:hover {
 }
 @media (max-width: 992px) {
   header .bx-navbar .navbar-nav .nav-item .nav-link {
-    padding-left: 28px;
-    padding-right: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 header .bx-navbar.sticky {
@@ -545,19 +545,23 @@ main .bx-banner .bx-banner-image {
           animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  width: 100%;
   height: auto;
 }
 @media (max-width: 991px) {
   main .bx-banner .bx-banner-image {
     margin-bottom: 0;
-    width: 350px;
-    margin-top: 30px;
+    width: 400px;
   }
 }
 @media (max-width: 767px) {
   main .bx-banner .bx-banner-image {
     width: 358px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 992px) {
+  main .bx-banner .bx-banner-image {
+    margin-left: -50px;
   }
 }
 main .bx-banner .banner-arrow {
@@ -712,6 +716,11 @@ main .why-blox3 .box dt {
     color: #14DFBE;
   } */
 }
+@media (max-width: 1400px) {
+  main .why-blox3 .box dt {
+    font-size: 44px;
+  }
+}
 @media (max-width: 1200px) {
   main .why-blox3 .box dt {
     font-size: 36px;
@@ -764,10 +773,10 @@ main .why-blox3 .box:hover {
 main .why-blox3 .box:hover:before {
   background: linear-gradient(90deg, #f5fcff -60%, #14DFBE, #1AD6CB, #2EB8F7);
   left: 50%;
-  padding-bottom: 160%;
+  padding-bottom: 180%;
   top: 50%;
   transition: background 0.15s, width 0.4s, left 0.4s, padding-bottom 0.4s, top 0.4s;
-  width: 160%;
+  width: 180%;
 }
 main .why-blox3 .box:hover dt {
   color: #fff;
@@ -1082,24 +1091,19 @@ main .how-much .bx-tilte {
 @media (max-width: 992px) {
   main .how-much .bx-tilte {
     font-size: 40px;
-    line-height: 60px;
   }
 }
 @media (max-width: 767px) {
   main .how-much .bx-tilte {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 48px;
     margin-bottom: 130px;
   }
-}
-main .how-much .slick-vertical .slick-slide {
-  width: 100% !important;
 }
 main .how-much .year {
   overflow: auto;
   display: inline-block;
   height: 67px;
-  width: 70px !important;
   vertical-align: middle;
   /* width */
   /* Track */
@@ -1108,13 +1112,12 @@ main .how-much .year {
 }
 @media (max-width: 992px) {
   main .how-much .year {
-    height: 64px;
-    width: 52px !important;
+    height: 60px;
   }
 }
 @media (max-width: 767px) {
   main .how-much .year {
-    height: 56px;
+    height: 38px;
   }
 }
 main .how-much .year::-webkit-scrollbar {
@@ -1130,11 +1133,16 @@ main .how-much .year::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 main .how-much .year ul {
-  /* animation-name: hovered;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-  animation-delay: 3s; */
+  -webkit-animation-name: hovered;
+          animation-name: hovered;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -1271,11 +1279,16 @@ main .how-much .bx-group .price-bank dl dd .number::-webkit-scrollbar-thumb:hove
   display: none;
 }
 main .how-much .bx-group .price-bank dl dd .number ul {
-  /* animation-name: hovered;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 3s; */
+  -webkit-animation-name: hovered;
+          animation-name: hovered;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -1384,11 +1397,16 @@ main .how-much .bx-group .price dl dd .number::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 main .how-much .bx-group .price dl dd .number ul {
-  /* animation-name: hovered;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-delay: 3s; */
+  -webkit-animation-name: hovered;
+          animation-name: hovered;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
