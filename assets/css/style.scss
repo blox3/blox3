@@ -996,7 +996,7 @@ main {
       }
       @media (max-width: 767px) {
         font-size: 40px;
-        line-height: 40px;
+        line-height: 50px;
         margin-bottom: 130px;
       }
     }
@@ -1051,11 +1051,15 @@ main {
         transform:translateY(-100%)
       }
     }
+    
     .bx-group{
       width: 660px;
       margin: 0 auto;
       @media (max-width: 767px) {
         width: 240px;
+      }
+      .slick-vertical .slick-slide{
+        width: 100%!important;
       }
       .price-bank{
         width: 174px;
