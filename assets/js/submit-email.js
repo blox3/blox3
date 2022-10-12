@@ -51,6 +51,7 @@ document.getElementById("mc-embedded-subscribe1").addEventListener("click", func
         });
         openVerifyInNewTab("mce-EMAIL1");
         bootstrap.Modal.getOrCreateInstance(document.getElementById('SubscribeModal')).show();
+        bootstrap.Modal.getOrCreateInstance(document.getElementById('SignUpModal')).hide();
     }
 });
 document.getElementById("mc-embedded-subscribe2").addEventListener("click", function() {
