@@ -80,9 +80,6 @@ function searchQuestion() {
 };
 document.getElementById("mc-embedded-subscribe").addEventListener("click", function () {
     var email = document.getElementById("mce-EMAIL").value;
-    /* $('#SubscribeModal').modal({
-        show: 'true'
-    });  */
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
@@ -129,11 +126,8 @@ document.getElementById("mc-embedded-subscribe1").addEventListener("click", func
         bootstrap.Modal.getOrCreateInstance(document.getElementById('SignUpModal')).hide();
     }
 });
-document.getElementById("mc-embedded-subscribe2").addEventListener("click", function () {
+/* document.getElementById("mc-embedded-subscribe2").addEventListener("click", function () {
     var email = document.getElementById("mce-EMAIL2").value;
-    /* $('#SubscribeModal').modal({
-        show: 'true'
-    });  */
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
@@ -153,7 +147,7 @@ document.getElementById("mc-embedded-subscribe2").addEventListener("click", func
         openVerifyInNewTab("mce-EMAIL2");
         bootstrap.Modal.getOrCreateInstance(document.getElementById('SubscribeModal')).show();
     }
-});
+}); */
 function openVerifyInNewTab(inputId) {
     var email = document.getElementById(inputId).value;
     if (validateEmail(email)) {
