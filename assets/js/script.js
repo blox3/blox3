@@ -19,7 +19,7 @@ $(function () {
             $('#header').removeClass('sticky');
         }
     }
-    
+
     window.setTimeout(() => {
         $('#CLLoading').fadeOut();
     }, 400)
@@ -30,6 +30,7 @@ $('#to_top').click(function (e) {
         scrollTop: 0
     }, 500);
 })
+new WOW().init();
 /* $(".why-blox3 .box button").click(function(){
     $(".why-blox3 .box .collapse").removeClass("show");
     $(".why-blox3 .box").removeClass("active");
