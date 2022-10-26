@@ -416,6 +416,14 @@ body {
   letter-spacing: -0.02em;
   color: $white-color;
   margin-bottom: 16px;
+
+  @media (max-width:991px) {
+    font-size: 18px;
+  }
+
+  @media (max-width:767px) {
+    font-size: 16px;
+  }
 }
 
 .mc-field-group {
@@ -1293,13 +1301,13 @@ main {
   .bx-banner {
     .container {
       padding-top: 115px;
-      padding-bottom: 104px;
+      padding-bottom: 57px;
       position: relative;
       border-bottom: 1px solid #414141;
 
       @media (max-width: 991px) {
         padding-top: 120px;
-        padding-bottom: 150px;
+        padding-bottom: 20px;
       }
 
       @media (max-width: 767px) {
@@ -1358,6 +1366,49 @@ main {
       letter-spacing: -0.02em;
       color: #EFE5DA;
       margin-bottom: 33px;
+
+      @media (max-width: 992px) {
+        font-size: 36px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 30px;
+        line-height: 44px;
+      }
+    }
+
+    .info {
+      dl {
+        margin-bottom: 47px;
+
+        dt {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: -0.02em;
+          color: #EFE5DA;
+          margin-bottom: 9px;
+
+          .icon {
+            display: inline-block;
+            margin-right: 9px;
+          }
+
+          @media (max-width:992px) {
+            font-size: 18px;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: 22px;
+          }
+        }
+
+        dd {
+          color: #EFE5DA;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
@@ -1446,8 +1497,8 @@ main {
       top: 0;
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-      -webkit-transition: background-color .15s .25s, width .4s, left .4s, padding-bottom .4s, top .4s;
-      transition: background-color .15s .25s, width .4s, left .4s, padding-bottom .4s, top .4s;
+      -webkit-transition: background-color .25s .35s, width .5s, left .5s, padding-bottom .5s, top .5s;
+      transition: background-color .25s .35s, width .5s, left .5s, padding-bottom .5s, top .5s;
       -webkit-transition-timing-function: cubic-bezier(.215, .61, .355, 1);
       transition-timing-function: cubic-bezier(.215, .61, .355, 1);
       width: 2.25rem;
@@ -1529,7 +1580,7 @@ main {
   }
 
   .box-ex {
-    padding: 30px 30px 40px 30px;
+    padding: 25px 30px 40px 30px;
 
     .why-blox3-icon {
       margin: 20px 0 0 0;
@@ -1613,8 +1664,8 @@ main {
         left: 50%;
         padding-bottom: 180%;
         top: 50%;
-        -webkit-transition: background .15s, width .4s, left .4s, padding-bottom .4s, top .4s;
-        transition: background .15s, width .4s, left .4s, padding-bottom .4s, top .4s;
+        -webkit-transition: background .25s, width .5s, left .5s, padding-bottom .5s, top .5s;
+        transition: background .25s, width .5s, left .5s, padding-bottom .5s, top .5s;
         width: 180%;
       }
 
