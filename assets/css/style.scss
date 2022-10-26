@@ -409,6 +409,42 @@ body {
   }
 }
 
+.form-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  color: $white-color;
+  margin-bottom: 16px;
+}
+
+.mc-field-group {
+  margin-bottom: 30px;
+}
+
+.form-control {
+  padding: 11px 15px;
+  height: 42px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: $input-color;
+  background: $input-bg-color;
+  border-radius: 0;
+  outline: 0 !important;
+  box-shadow: none !important;
+  transition: all ease-in-out 0.3s;
+  border: none;
+
+  &::placeholder {
+    color: $placeholder-color;
+  }
+
+  &:focus {
+    border-color: $button-bg-color;
+  }
+}
+
 header {
   .bx-navbar {
     background-color: transparent !important;
@@ -685,28 +721,7 @@ header {
     width: 100%;
   }
 
-  .form-control {
-    padding: 11px 15px;
-    height: 42px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 140%;
-    color: $input-color;
-    background: $input-bg-color;
-    border-radius: 0;
-    outline: 0 !important;
-    box-shadow: none !important;
-    transition: all ease-in-out 0.3s;
-    border: none;
 
-    &::placeholder {
-      color: $placeholder-color;
-    }
-
-    &:focus {
-      border-color: $button-bg-color;
-    }
-  }
 
   .btn {
     padding: 10px 9px;
