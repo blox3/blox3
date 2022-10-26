@@ -58,7 +58,7 @@
         <header>
             <nav class="bx-navbar navbar navbar-expand-lg bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <img src="assets/images/logo.svg" alt="Blox3" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -69,7 +69,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-lg-0">
                             <li class="d-block d-md-none">
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand" href="index.html">
                                     <img src="assets/images/logo.svg" alt="Blox3" />
                                 </a>
                             </li>
@@ -683,17 +683,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="bx-title">How much can <br class="d-block d-md-none">your $10,000 <br
-                                    class="d-none d-md-block">grow <br class="d-block d-md-none">after
-                                <span class="year">
-                                    <ul class="ani-price">
-                                        <li>1</li>
-                                        <li>5</li>
-                                        <li>10</li>
-                                    </ul>
-                                </span>
-                                years?
-                            </div> -->
                         </div>
                     </div>
                     <div class="questions">
@@ -805,11 +794,13 @@
                             <div class="bx-title wow fadeInUp">Testimonials</div>
                             <div class="row justify-content-between">
                                 <div class="col-md-5">
-                                    <div class="testimonials-slider wow fadeInUp">
+                                    <div class="testimonials-slider nav-tabs" id="nav-tab" role="tablist">
                                         <div class="slide">
-                                            <div class="item d-flex">
+                                            <div class="item d-flex active" id="nav-1-tab" data-bs-toggle="tab"
+                                                data-bs-target="#tab1" type="button" role="tab" aria-controls="nav-1"
+                                                aria-selected="true">
                                                 <div class="photo">
-                                                    <img src="./assets/images/testimonials-img1.svg" alt="testimonials">
+                                                    <img src="./assets/images/testimonials-img1.jpg" alt="testimonials">
                                                 </div>
                                                 <div class="text">
                                                     <dl>
@@ -817,17 +808,20 @@
                                                         <dd>Earning 18% APY over 12 months</dd>
                                                     </dl>
                                                     <p class="link"><a href="https://twitter.com/MurrayNewlands"
-                                                            target="_blank">https://twitter.com/MurrayNewlands</a></p>
+                                                            target="_blank">https://twitter.com/MurrayNewlands</a>
+                                                    </p>
                                                 </div>
                                             </div>
-                                            <div class="item d-flex">
+                                            <div class="item d-flex" id="nav-2-tab" data-bs-toggle="tab"
+                                                data-bs-target="#tab2" type="button" role="tab" aria-controls="nav-2"
+                                                aria-selected="false">
                                                 <div class="photo">
-                                                    <img src="./assets/images/testimonials-img2.svg" alt="testimonials">
+                                                    <img src="./assets/images/testimonials-img2.jpg" alt="testimonials">
                                                 </div>
                                                 <div class="text">
                                                     <dl>
                                                         <dt>RongJiang Lan</dt>
-                                                        <dd>Earning 18% APY over 12 months</dd>
+                                                        <dd>Earning 12% APY in 6 months</dd>
                                                     </dl>
                                                     <p class="link"><a href="https://twitter.com/RongJiangLan"
                                                             target="_blank">https://twitter.com/RongJiangLan</a></p>
@@ -845,12 +839,27 @@
                                         <li><img src="./assets/images/star.svg" alt="star"></li>
                                         <li><img src="./assets/images/star.svg" alt="star"></li>
                                     </ul>
-                                    <p class="wow fadeInUp">Blox3's conservative investment strategies have been
-                                        incredibly beneficial to my overall portfolio. I earn high-yield
-                                        returns by investing in real-world businesses that provide the long-term
-                                        stability I need.</p>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div id="tab1" class="tab-pane fade active show" role="tabpanel"
+                                            aria-labelledby="nav-home-tab">
+                                            <p>Blox3's conservative investment strategies have been
+                                                incredibly beneficial to my overall portfolio. I earn high-yield
+                                                returns by investing in real-world businesses that provide the long-term
+                                                stability I need.</p>
+                                        </div>
+                                        <div id="tab2" class="tab-pane fade" role="tabpanel"
+                                            aria-labelledby="nav-profile-tab">
+                                            <p>I love the flexibility of @Blox3hq. Transparency is important to me, and
+                                                Blox3 provides cross-border investments that
+                                                clearly show me where and how my money is being put to use, giving me
+                                                increased control over my investment compared to
+                                                traditional savings options.</p>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -885,10 +894,6 @@
                                 <p class="up d-none d-md-block"><img src="./assets/images/up.svg" alt="up"></p>
                             </div>
                         </div>
-
-                        <!-- <div class="bx-disc">Join the Blox3’s waitlist with others who are ready to make the switch
-                        </div> -->
-
                     </div>
                 </div>
             </section>
@@ -897,7 +902,7 @@
                     <div class="bg-green">
                         <div class="row">
                             <div class="col-lg-4">
-                                <a class="bx-footer-logo" href="#">
+                                <a class="bx-footer-logo" href="index.html">
                                     <img src="assets/images/logo-black.svg" alt="Blox3" />
                                 </a>
                                 <div class="bx-socials">
@@ -956,21 +961,6 @@
                                                 alt="web browser" /></a>
                                     </li>
                                 </ul>
-                                <!-- <div class="trust">
-                            <span class="icon"><img src="assets/images/star.svg" alt="star" /></span>
-                            <span class="bx-footer-title-mini">Trustpilot</span>
-                        </div>
-                        <div class="excellent">
-                            <div class="bx-footer-title-mini">Excellent</div>
-                            <ul class="star d-flex">
-                                <li><img src="assets/images/star1.svg" alt="star" /></li>
-                                <li><img src="assets/images/star1.svg" alt="star" /></li>
-                                <li><img src="assets/images/star1.svg" alt="star" /></li>
-                                <li><img src="assets/images/star1.svg" alt="star" /></li>
-                                <li><img src="assets/images/star2.svg" alt="star" /></li>
-                            </ul>
-                            <div class="reviews"><span>436</span> reviews</div>
-                        </div> -->
                             </div>
                         </div>
                         <p class="text">When you deposit your asset with us, they will be held by our custodial partner,
@@ -1001,11 +991,6 @@
 
                     <div class="bx-footer-bottom d-flex">
                         <address>© Copyright 2022 Blox3. All rights reserved.</address>
-                        <!-- <ul>
-                        <li><a href="https://woozy-newsstand-69a.notion.site/SUPPORT-e5d9ff07b69e430fb95e6f65994a4790">Support</a></li>
-                        <li><a href="https://woozy-newsstand-69a.notion.site/CAREERS-AT-BLOX3-3b681444b5a640d7a3258cdc9865e9b7">Careers</a></li>
-                        <li><a href="https://woozy-newsstand-69a.notion.site/TERMS-AND-CONDITION-8a3fabca753c4a0f9e3d44a1012467f2">Terms</a></li>
-                    </ul> -->
                         <span>Privacy Policy</span>
                     </div>
                 </div>
