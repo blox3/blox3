@@ -1253,6 +1253,15 @@ main {
 .contact-page .bx-banner .bx-banner-description {
   margin-bottom: 45px;
 }
+.contact-page .bx-banner .bx-banner-heading-mini {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 106.55%;
+  letter-spacing: -0.02em;
+  color: #EFE5DA;
+  margin-bottom: 33px;
+}
+
 .why-blox3 {
   position: relative;
   /* .box.active{
@@ -1333,7 +1342,7 @@ main {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 20px;
-  padding: 50px 30px 64px 30px;
+  padding: 55px 30px 40px 30px;
   text-align: left;
   color: #fff;
   transition: all ease-in-out 0.3s;
@@ -1368,16 +1377,29 @@ main {
     margin-right: auto;
   }
 }
+@media (max-width: 430px) {
+  .why-blox3 .box {
+    padding: 37px 20px 20px 20px;
+  }
+}
 .why-blox3 .box .why-blox3-icon {
-  margin: 20px 0 0 0;
+  margin: 35px 0 0 0;
 }
 .why-blox3 .box .why-blox3-icon svg path {
   fill: #fff;
 }
 @media (max-width: 767px) {
+  .why-blox3 .box .why-blox3-icon {
+    margin: 20px 0 0 0;
+  }
   .why-blox3 .box .why-blox3-icon svg {
     width: 64px;
     height: auto;
+  }
+}
+@media (max-width: 430px) {
+  .why-blox3 .box .why-blox3-icon {
+    margin: 30px 0 0 0;
   }
 }
 .why-blox3 .box dt {
@@ -1386,20 +1408,15 @@ main {
   line-height: 45px;
   letter-spacing: -0.02em;
 }
-@media (max-width: 1400px) {
-  .why-blox3 .box dt {
-    font-size: 44px;
-  }
-}
 @media (max-width: 1200px) {
   .why-blox3 .box dt {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 @media (max-width: 767px) {
   .why-blox3 .box dt {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 27px;
   }
 }
@@ -1417,6 +1434,36 @@ main {
   .why-blox3 .box dd {
     font-size: 14px;
     margin: 8px 0 0 0;
+  }
+}
+.why-blox3 .box-ex {
+  padding: 30px 30px 40px 30px;
+}
+.why-blox3 .box-ex .why-blox3-icon {
+  margin: 20px 0 0 0;
+}
+@media (max-width: 1200px) {
+  .why-blox3 .box-ex {
+    padding: 35px 30px 40px 30px;
+  }
+  .why-blox3 .box-ex .why-blox3-icon {
+    margin: 25px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .why-blox3 .box-ex {
+    padding: 20px;
+  }
+  .why-blox3 .box-ex .why-blox3-icon {
+    margin: 20px 0 0 0;
+  }
+}
+@media (max-width: 430px) {
+  .why-blox3 .box-ex {
+    padding: 20px;
+  }
+  .why-blox3 .box-ex .why-blox3-icon {
+    margin: 20px 0 0 0;
   }
 }
 .why-blox3 .arrow {
