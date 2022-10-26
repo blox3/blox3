@@ -386,6 +386,16 @@ body {
   color: #fff;
   margin-bottom: 16px;
 }
+@media (max-width: 991px) {
+  .form-label {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .form-label {
+    font-size: 16px;
+  }
+}
 
 .mc-field-group {
   margin-bottom: 30px;
@@ -1193,14 +1203,14 @@ main {
 
 .contact-page .bx-banner .container {
   padding-top: 115px;
-  padding-bottom: 104px;
+  padding-bottom: 57px;
   position: relative;
   border-bottom: 1px solid #414141;
 }
 @media (max-width: 991px) {
   .contact-page .bx-banner .container {
     padding-top: 120px;
-    padding-bottom: 150px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -1260,6 +1270,47 @@ main {
   letter-spacing: -0.02em;
   color: #EFE5DA;
   margin-bottom: 33px;
+}
+@media (max-width: 992px) {
+  .contact-page .bx-banner .bx-banner-heading-mini {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-page .bx-banner .bx-banner-heading-mini {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+.contact-page .bx-banner .info dl {
+  margin-bottom: 47px;
+}
+.contact-page .bx-banner .info dl dt {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #EFE5DA;
+  margin-bottom: 9px;
+}
+.contact-page .bx-banner .info dl dt .icon {
+  display: inline-block;
+  margin-right: 9px;
+}
+@media (max-width: 992px) {
+  .contact-page .bx-banner .info dl dt {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-page .bx-banner .info dl dt {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.contact-page .bx-banner .info dl dd {
+  color: #EFE5DA;
+  margin-bottom: 0;
 }
 
 .why-blox3 {
@@ -1360,7 +1411,7 @@ main {
   position: absolute;
   top: 0;
   transform: translateX(-50%) translateY(-50%);
-  transition: background-color 0.15s 0.25s, width 0.4s, left 0.4s, padding-bottom 0.4s, top 0.4s;
+  transition: background-color 0.25s 0.35s, width 0.5s, left 0.5s, padding-bottom 0.5s, top 0.5s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 2.25rem;
   z-index: 1;
@@ -1437,7 +1488,7 @@ main {
   }
 }
 .why-blox3 .box-ex {
-  padding: 30px 30px 40px 30px;
+  padding: 25px 30px 40px 30px;
 }
 .why-blox3 .box-ex .why-blox3-icon {
   margin: 20px 0 0 0;
@@ -1494,7 +1545,7 @@ main {
   left: 50%;
   padding-bottom: 180%;
   top: 50%;
-  transition: background 0.15s, width 0.4s, left 0.4s, padding-bottom 0.4s, top 0.4s;
+  transition: background 0.25s, width 0.5s, left 0.5s, padding-bottom 0.5s, top 0.5s;
   width: 180%;
 }
 .why-blox3 .box:hover:after {
