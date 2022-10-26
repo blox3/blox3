@@ -46,3 +46,6 @@ new WOW().init();
         $(this).parent().find(".collapse").removeClass("show");
     }
 }); */
+function clickTestimonials() {
+
+};

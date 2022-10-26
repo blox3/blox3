@@ -120,13 +120,13 @@ body {
 }
 
 .slick-prev {
-  left: 148px;
+  left: calc(50% - 110px);
   background: url("../images/Prev.svg")no-repeat center center;
   background-size: contain;
 }
 
 .slick-next {
-  right: 148px;
+  right: calc(50% - 110px);
   left: auto;
   background: url("../images/Next.svg")no-repeat center center;
   background-size: contain;
@@ -145,7 +145,7 @@ body {
   opacity: 0.25;
 }
 
-@media (max-width:1300px) {
+/* @media (max-width:1300px) {
   .slick-prev {
     left: 130px;
   }
@@ -184,7 +184,7 @@ body {
     right: 50px;
   }
 }
-
+ */
 @media (max-width: 767px) {
   .slick-dots li {
     width: 14px;
@@ -1274,6 +1274,72 @@ main {
   }
 }
 
+.contact-page {
+  .bx-banner {
+    .container {
+      padding-top: 115px;
+      padding-bottom: 104px;
+      position: relative;
+      border-bottom: 1px solid #414141;
+
+      @media (max-width: 991px) {
+        padding-top: 120px;
+        padding-bottom: 150px;
+      }
+
+      @media (max-width: 767px) {
+        padding-top: 120px;
+        padding-bottom: 44px;
+      }
+    }
+
+    .bx-banner-heading {
+      font-weight: 500;
+      font-size: 180px;
+      line-height: 100%;
+      letter-spacing: -0.02em;
+      color: #EFE5DA;
+      margin-bottom: 37px;
+      white-space: nowrap;
+
+      @media (max-width: 1399px) {
+        font-size: 106px;
+      }
+
+      @media (max-width: 1200px) {
+        font-size: 80px;
+      }
+
+      @media (max-width: 991px) {
+        font-size: 60px;
+        //margin-bottom: 10px;
+      }
+
+      @media (max-width: 676px) {
+        font-size: 60px;
+        //margin-bottom: 10px;
+      }
+
+      @media (max-width: 576px) {
+        margin-top: 0;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 48px;
+        line-height: 53px;
+        text-align: left;
+        //margin-bottom: 20px;
+      }
+    }
+
+    .bx-banner-description {
+      margin-bottom: 45px;
+    }
+
+    .bx-banner-heading-mini {}
+  }
+}
+
 .why-blox3 {
   position: relative;
 
@@ -2279,6 +2345,10 @@ main {
     margin: 0 0 36px 0;
   }
 
+  .nav-tabs {
+    border-bottom: none;
+  }
+
   .item {
     border: 1px solid #414141;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.4);
@@ -2288,6 +2358,15 @@ main {
 
     .photo {
       margin: 0 36px 0 0;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     dl {
@@ -2346,6 +2425,10 @@ main {
 
   .gap-5 {
     gap: 5px !important;
+  }
+
+  .fade:not(.show) {
+    opacity: 1;
   }
 
   @media (max-width: 992px) {
