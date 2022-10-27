@@ -2448,6 +2448,9 @@ main {
   width: 100%;
   height: auto;
 }
+.testimonials .item .text {
+  width: calc(100% - 102px);
+}
 .testimonials .item dl {
   color: #E2E2E2;
   margin-bottom: 0;
@@ -2519,7 +2522,8 @@ main {
   }
   .testimonials .item .photo {
     margin: 0 20px 0 0;
-    width: 20%;
+    width: 60px;
+    height: 60px;
   }
   .testimonials .item .photo img {
     width: 100%;
@@ -2534,6 +2538,9 @@ main {
   .testimonials .item .link {
     font-size: 12px;
   }
+  .testimonials .text {
+    width: calc(100% - 80px);
+  }
 }
 @media (max-width: 767px) {
   .testimonials {
@@ -2545,6 +2552,9 @@ main {
   .testimonials .item .photo {
     width: 50px;
     height: 50px;
+  }
+  .testimonials .text {
+    width: calc(100% - 70px);
   }
   .testimonials .testimonials-title {
     font-size: 18px;
