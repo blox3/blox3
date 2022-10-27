@@ -2431,6 +2431,11 @@ main {
   border-radius: 12px;
   margin-bottom: 30px;
   padding: 23px 25px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .testimonials .item .photo {
   margin: 0 36px 0 0;
