@@ -46,6 +46,15 @@ new WOW().init();
         $(this).parent().find(".collapse").removeClass("show");
     }
 }); */
+$('a[href^="#"]').click(function (e) {
+    const targetEl = $(this).attr('href');
+    if (targetEl != '#' && targetEl.startsWith('#')) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: ($(targetEl).offset().top - 78)
+        }, 500);
+    }
+});
 function clickTestimonials() {
 
 };

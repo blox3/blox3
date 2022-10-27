@@ -110,7 +110,7 @@
                             <img src="assets/images/about-blox3.svg" alt="blox3" width="409" height="500" />
                         </div>
                         <div class="col-md-8">
-                            <h1 class="bx-banner-heading">About Blox3</h1>
+                            <h1 class="bx-banner-heading">About <br class="d-none d-md-block">Blox3</h1>
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@
             <section>
                 <div class="welcome">
                     <div class="container">
-                        <h2>Hello World,<br>and welcome to <span class="bg-green">Blox3</span></h2>
+                        <div class="bx-title">Hello World,<br>and welcome to <span class="bg-green">Blox3</span></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <p>We are a fintech company changing the way the world invests by creating sustainable
@@ -138,7 +138,7 @@
                                     borderless global transactions that are
                                     instant, open, and accessible to everyone.</p>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 photo">
                                 <img src="assets/images/welcome.png"
                                     srcset="assets/images/welcome.png 1x, assets/images/welcome@2x.png 2x, assets/images/welcome@3x.png 3x"
                                     alt="welcome" width="603" height="662">
@@ -149,13 +149,18 @@
                 <div class="story">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="assets/images/story.jpg"
-                                    srcset="assets/images/story.jpg 1x, assets/images/story@2x.jpg 2x, assets/images/story@3x.jpg 3x"
-                                    alt="story" width="407" height="1025">
+                            <div class="col-lg-4 photo">
+
+                                <picture>
+                                    <source media="(max-width:991px)"
+                                        srcset="assets/images/story-sp.jpg 1x, assets/images/story-sp@2x.jpg 2x, assets/images/story-sp@3x.jpg 3x">
+                                    <img src="assets/images/story.jpg"
+                                        srcset="assets/images/story.jpg 1x, assets/images/story@2x.jpg 2x, assets/images/story@3x.jpg 3x"
+                                        alt="story" width="407" height="1025">
+                                </picture>
                             </div>
-                            <div class="col-md-8">
-                                <div class="row justify-content-between">
+                            <div class="col-lg-8">
+                                <div class="item row justify-content-between">
                                     <div class="col-md-5">
                                         <dl>
                                             <dt>01</dt>
@@ -163,7 +168,7 @@
                                                 Blox3 Story</dd>
                                         </dl>
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-md-6">
                                         <p>The Blox3 story begins with a group of financiers, engineers, and
                                             entrepreneurs
                                             set out to find a better way to create
@@ -177,14 +182,14 @@
                                             utilize the global markets to their advantage!</p>
                                     </div>
                                 </div>
-                                <div class="row justify-content-between">
+                                <div class="item row justify-content-between">
                                     <div class="col-md-5">
                                         <dl>
                                             <dt>02</dt>
                                             <dd>Our <br>Mission</dd>
                                         </dl>
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-md-6">
                                         <p>Our mission is to change how investors of any size take power over their
                                             investments. The goal is to provide
                                             conservative and sustainable long-term investments that return above-average
@@ -195,7 +200,7 @@
                                             biggest market players.</p>
                                     </div>
                                 </div>
-                                <div class="row justify-content-between">
+                                <div class="item row justify-content-between">
                                     <div class="col-md-5">
                                         <dl>
                                             <dt>03</dt>
@@ -203,7 +208,7 @@
                                                 Vision</dd>
                                         </dl>
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-md-6">
                                         <p>Our vision doesn’t just stop at changing how people invest, but challenging
                                             the underlying foundations of the global
                                             financial system. BLOX3 believes that every investor should have an equal
@@ -230,16 +235,16 @@
                                 member is given the opportunities
                                 to excel.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
+                        <!-- <div class="row">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="box">
-                                    <p class="avatar">
+                                    <div class="avatar">
                                         <img src="./assets/images/our-team-avatar1.jpg" alt="avatar">
-                                    </p>
+                                    </div>
                                     <h4>Stephen Strange</h4>
-                                    <div class="row">
-                                        <h5 class="col-6">CEO & Founder</h5>
-                                        <ul class="social">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>CEO & Founder</h5>
+                                        <ul class="social d-flex">
                                             <li>
                                                 <a href="https://github.com/blox3" target="_blank"><svg width="32"
                                                         height="32" viewBox="0 0 32 32" fill="none"
@@ -283,15 +288,15 @@
                                         book.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="box">
-                                    <p class="avatar">
+                                    <div class="avatar">
                                         <img src="./assets/images/our-team-avatar1.jpg" alt="avatar">
-                                    </p>
+                                    </div>
                                     <h4>Stephen Strange</h4>
-                                    <div class="row">
-                                        <h5 class="col-6">CEO & Founder</h5>
-                                        <ul class="social">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>CEO & Founder</h5>
+                                        <ul class="social d-flex">
                                             <li>
                                                 <a href="https://github.com/blox3" target="_blank"><svg width="32"
                                                         height="32" viewBox="0 0 32 32" fill="none"
@@ -335,15 +340,15 @@
                                         book.</p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-lg-4 col-md-6">
                                 <div class="box">
-                                    <p class="avatar">
+                                    <div class="avatar">
                                         <img src="./assets/images/our-team-avatar1.jpg" alt="avatar">
-                                    </p>
+                                    </div>
                                     <h4>Stephen Strange</h4>
-                                    <div class="row">
-                                        <h5 class="col-6">CEO & Founder</h5>
-                                        <ul class="social">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>CEO & Founder</h5>
+                                        <ul class="social d-flex">
                                             <li>
                                                 <a href="https://github.com/blox3" target="_blank"><svg width="32"
                                                         height="32" viewBox="0 0 32 32" fill="none"
@@ -387,35 +392,69 @@
                                         book.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="provide">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <div class="box-purple">
                                     <div class="quote">
                                         <img src="./assets/images/quote-up.svg" alt="quote">
                                     </div>
-                                    <p>At BLOX3, I’m provided with honest and constructive feedback. Communication is
+                                    <h4>At BLOX3, I’m provided with honest and constructive feedback. Communication is
                                         important to me, and BLOX3 provides the
                                         type of environment where I can feel confident and comfortable to share my
-                                        ideas.</p>
+                                        ideas.</h4>
                                     <div class="position">-Caroline, Business Development</div>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                                 <div class="photo">
-                                    <img src="assets/images/provide.jpg"
-                                        srcset="assets/images/provide.jpg 1x, assets/images/provide@2x.jpg 2x, assets/images/provide@3x.jpg 3x"
+                                    <img src="assets/images/provide-img.jpg"
+                                        srcset="assets/images/provide-img.jpg 1x, assets/images/provide-img@2x.jpg 2x, assets/images/provide-img@3x.jpg 3x"
                                         alt="provide" width="844" height="244">
                                 </div>
                                 <div class="row">
-                                    <div class="col-mg-6">
-
+                                    <div class="col-md-6">
+                                        <div class="box-red">
+                                            <h4>Everyone is provided an equal opportunity to showcase their talents.
+                                            </h4>
+                                            <div class="position">-Jay, Marketing Manager</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box-gray">
+                                            <h4>It’s so exciting working with innovative companies that are changing how
+                                                the world does business.</h4>
+                                            <div class="position">-Henry, Customer Operations</div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="growing">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="bx-title">
+                                    We’re growing. Fast.
+                                </div>
+                                <p>Founded by some of the sharpest minds in Silicon Valley, at BLOX3 you will work with
+                                    individuals fascinated by
+                                    technological innovation, and the business opportunities that come from emerging
+                                    markets. Come build with us today!</p>
+                                <div>
+                                    <button type="button" name="SeeOpenPositions" class="btn btn-cus">
+                                        <span>See open positions</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-6 photo">
+                                <img src="./assets/images/growing-img.jpg" alt="">
                             </div>
                         </div>
                     </div>
