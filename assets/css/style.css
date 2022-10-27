@@ -847,7 +847,7 @@ main {
   font-size: 110px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 45px;
   white-space: nowrap;
   margin-top: 73px;
@@ -956,7 +956,7 @@ main {
   font-size: 180px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 37px;
   white-space: nowrap;
 }
@@ -1000,7 +1000,7 @@ main {
   font-size: 56px;
   line-height: 106.55%;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 33px;
 }
 @media (max-width: 992px) {
@@ -1022,7 +1022,7 @@ main {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 9px;
 }
 .contact-page .bx-banner .info dl dt .icon {
@@ -1041,7 +1041,7 @@ main {
   }
 }
 .contact-page .bx-banner .info dl dd {
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 0;
 }
 
@@ -1067,7 +1067,7 @@ main {
   font-size: 180px;
   line-height: 100%;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-top: 24px;
 }
 @media (max-width: 1200px) {
@@ -1105,7 +1105,7 @@ main {
   font-size: 56px;
   line-height: 106.55%;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 33px;
 }
 @media (max-width: 992px) {
@@ -1131,7 +1131,7 @@ main {
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 9px;
 }
 .about-page .bx-banner .info dl dt .icon {
@@ -1150,7 +1150,7 @@ main {
   }
 }
 .about-page .bx-banner .info dl dd {
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 0;
 }
 @media (max-width: 767px) {
@@ -2491,7 +2491,7 @@ main {
   font-size: 120px;
   line-height: 100%;
   letter-spacing: -0.04em;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 73px;
 }
 .welcome .bx-title .bg-green {
@@ -2568,7 +2568,7 @@ main {
   font-size: 56px;
   line-height: 106.55%;
   letter-spacing: -0.02em;
-  color: #EFE5DA;
+  color: #fff;
 }
 @media (max-width: 1400px) {
   .story dl dd {
@@ -2635,7 +2635,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
-  color: #EFE5DA;
+  color: #fff;
   margin-bottom: 10px;
 }
 .our-team .box h5 {
@@ -2691,7 +2691,7 @@ main {
 .provide .box-purple {
   background: #9241FC;
   border-radius: 12px;
-  color: #EFE5DA;
+  color: #fff;
   padding: 21px 21px 37px 21px;
 }
 .provide .box-purple .quote {
@@ -2716,7 +2716,7 @@ main {
   background: #FF5050;
   border-radius: 70px;
   padding: 47px 31px 37px 31px;
-  color: #EFE5DA;
+  color: #fff;
 }
 .provide .box-red h4 {
   font-weight: 500;
@@ -2729,7 +2729,7 @@ main {
   background: #494949;
   border-radius: 12px;
   padding: 30px 30px 37px 30px;
-  color: #EFE5DA;
+  color: #fff;
 }
 .provide .box-gray h4 {
   font-weight: 500;
@@ -2780,7 +2780,7 @@ main {
 .growing .bx-title {
   margin-top: 60px;
   margin-bottom: 6px;
-  color: #EFE5DA;
+  color: #fff;
 }
 .growing p {
   margin-bottom: 19px;
@@ -3029,7 +3029,7 @@ footer .bx-footer-bottom {
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0.02em;
-  color: #EFE5DA;
+  color: #fff;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -3037,7 +3037,7 @@ footer .bx-footer-bottom address {
   margin-bottom: 0;
 }
 footer .bx-footer-bottom a {
-  color: #EFE5DA;
+  color: #fff;
   text-decoration: none;
 }
 footer .bx-footer-bottom a:hover {
