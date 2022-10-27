@@ -453,8 +453,13 @@ header .bx-navbar.sticky {
   text-transform: uppercase;
   border: none;
 }
+.btn-cus a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
 .btn-cus:hover {
-  opacity: 0.8;
+  opacity: 0.8 !important;
 }
 @media (max-width: 576px) {
   .btn-cus {
