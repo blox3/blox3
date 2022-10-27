@@ -2610,6 +2610,12 @@ main {
     border-radius: 12px;
     margin-bottom: 30px;
     padding: 23px 25px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 
     .photo {
       margin: 0 36px 0 0;
