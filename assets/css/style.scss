@@ -2664,6 +2664,10 @@ main {
     background: #414141;
   }
 
+  .item:focus-visible {
+    outline: none;
+  }
+
   .testimonials-title {
     font-weight: 500;
     font-size: 20px;
