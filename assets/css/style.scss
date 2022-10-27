@@ -936,7 +936,7 @@ main {
       font-size: 110px;
       line-height: 100%;
       letter-spacing: -0.02em;
-      color: #EFE5DA;
+      color: $white-color;
       margin-bottom: 45px;
       white-space: nowrap;
       margin-top: 73px;
@@ -1051,7 +1051,7 @@ main {
       font-size: 180px;
       line-height: 100%;
       letter-spacing: -0.02em;
-      color: #EFE5DA;
+      color: $white-color;
       margin-bottom: 37px;
       white-space: nowrap;
 
@@ -1094,7 +1094,7 @@ main {
       font-size: 56px;
       line-height: 106.55%;
       letter-spacing: -0.02em;
-      color: #EFE5DA;
+      color: $white-color;
       margin-bottom: 33px;
 
       @media (max-width: 992px) {
@@ -1116,7 +1116,7 @@ main {
           font-size: 24px;
           line-height: 36px;
           letter-spacing: -0.02em;
-          color: #EFE5DA;
+          color: $white-color;
           margin-bottom: 9px;
 
           .icon {
@@ -1135,7 +1135,7 @@ main {
         }
 
         dd {
-          color: #EFE5DA;
+          color: $white-color;
           margin-bottom: 0;
         }
       }
@@ -1166,7 +1166,7 @@ main {
       font-size: 180px;
       line-height: 100%;
       letter-spacing: -0.02em;
-      color: #EFE5DA;
+      color: $white-color;
       margin-top: 24px;
 
       @media (max-width: 1200px) {
@@ -1204,7 +1204,7 @@ main {
       font-size: 56px;
       line-height: 106.55%;
       letter-spacing: -0.02em;
-      color: #EFE5DA;
+      color: $white-color;
       margin-bottom: 33px;
 
       @media (max-width: 992px) {
@@ -1233,7 +1233,7 @@ main {
           font-size: 24px;
           line-height: 36px;
           letter-spacing: -0.02em;
-          color: #EFE5DA;
+          color: $white-color;
           margin-bottom: 9px;
 
           .icon {
@@ -1252,7 +1252,7 @@ main {
         }
 
         dd {
-          color: #EFE5DA;
+          color: $white-color;
           margin-bottom: 0;
         }
       }
@@ -2729,7 +2729,7 @@ main {
     font-size: 120px;
     line-height: 100%;
     letter-spacing: -0.04em;
-    color: #EFE5DA;
+    color: $white-color;
     margin-bottom: 73px;
 
     .bg-green {
@@ -2820,7 +2820,7 @@ main {
       font-size: 56px;
       line-height: 106.55%;
       letter-spacing: -0.02em;
-      color: #EFE5DA;
+      color: $white-color;
     }
   }
 
@@ -2905,7 +2905,7 @@ main {
       font-weight: 500;
       font-size: 20px;
       line-height: 150%;
-      color: #EFE5DA;
+      color: $white-color;
       margin-bottom: 10px;
     }
 
@@ -2972,7 +2972,7 @@ main {
   .box-purple {
     background: #9241FC;
     border-radius: 12px;
-    color: #EFE5DA;
+    color: $white-color;
     padding: 21px 21px 37px 21px;
 
     .quote {
@@ -3002,7 +3002,7 @@ main {
     background: #FF5050;
     border-radius: 70px;
     padding: 47px 31px 37px 31px;
-    color: #EFE5DA;
+    color: $white-color;
 
     h4 {
       font-weight: 500;
@@ -3017,7 +3017,7 @@ main {
     background: #494949;
     border-radius: 12px;
     padding: 30px 30px 37px 30px;
-    color: #EFE5DA;
+    color: $white-color;
 
     h4 {
       font-weight: 500;
@@ -3089,7 +3089,7 @@ main {
   .bx-title {
     margin-top: 60px;
     margin-bottom: 6px;
-    color: #EFE5DA;
+    color: $white-color;
   }
 
   p {
@@ -3355,7 +3355,7 @@ footer {
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.02em;
-    color: #EFE5DA;
+    color: $white-color;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -3364,7 +3364,7 @@ footer {
     }
 
     a {
-      color: #EFE5DA;
+      color: $white-color;
       text-decoration: none;
 
       &:hover {
