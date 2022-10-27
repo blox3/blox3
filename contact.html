@@ -51,6 +51,8 @@
         <link rel="stylesheet" href="assets/plugins/aos/aos.css" />
         <link rel="stylesheet" href="assets/css/animate.min.css" />
         <link rel="stylesheet" href="assets/css/slick.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
         <link rel="stylesheet" href="assets/css/style.css?v=2" />
     </head>
 
@@ -413,6 +415,7 @@
         <script src="assets/plugins/aos/aos.js"></script>
         <script src="assets/js/wow.min.js"></script>
         <script src="assets/js/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script type='text/javascript'
             src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
@@ -432,6 +435,13 @@
                     $('.bx-navbar').removeClass('sticky');
                 }
             }
+
+            const phoneInputField = document.querySelector("#mce-PHONE");
+            const phoneInput = window.intlTelInput(phoneInputField, {
+                utilsScript:
+                    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+            });
+
         </script>
     </body>
 
