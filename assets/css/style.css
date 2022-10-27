@@ -405,7 +405,7 @@ body {
   margin-bottom: 30px;
 }
 
-#mc_embed_signup div.mce_inline_error {
+.mce_inline_error {
   font-size: 12px;
   font-weight: normal;
 }
@@ -2436,6 +2436,9 @@ main {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .testimonials .item .photo {
   margin: 0 36px 0 0;
@@ -2696,6 +2699,11 @@ main {
   padding: 10px 52px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15) !important;
 }
+@media (max-width: 767px) {
+  .early .btn-join button {
+    padding: 10px 30px;
+  }
+}
 .early .link {
   text-align: center;
   width: calc(100% - 32px);
@@ -2772,10 +2780,11 @@ main {
     padding: 3px 0 3px 0;
   }
   .early .link a {
-    font-size: 10px;
+    font-size: 9px;
+    letter-spacing: 0.5em;
   }
   .early .text {
-    font-size: 10px;
+    font-size: 9px;
     line-height: 30px;
   }
 }
@@ -3226,7 +3235,7 @@ footer .bx-socials {
   align-items: center;
   gap: 30px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   footer .bx-socials {
     margin-bottom: 30px;
     gap: 20px;

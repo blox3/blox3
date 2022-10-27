@@ -434,7 +434,7 @@ body {
   margin-bottom: 30px;
 }
 
-#mc_embed_signup div.mce_inline_error {
+.mce_inline_error {
   font-size: 12px;
   font-weight: normal;
 }
@@ -2616,6 +2616,9 @@ main {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
     .photo {
       margin: 0 36px 0 0;
@@ -2913,6 +2916,10 @@ main {
     button {
       padding: 10px 52px;
       box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15) !important;
+
+      @media (max-width: 767px) {
+        padding: 10px 30px;
+      }
     }
   }
 
@@ -3006,12 +3013,13 @@ main {
       padding: 3px 0 3px 0;
 
       a {
-        font-size: 10px;
+        font-size: 9px;
+        letter-spacing: 0.5em;
       }
     }
 
     .text {
-      font-size: 10px;
+      font-size: 9px;
       line-height: 30px;
     }
   }
@@ -3529,7 +3537,7 @@ footer {
     align-items: center;
     gap: 30px;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1200px) {
       margin-bottom: 30px;
       gap: 20px;
     }
