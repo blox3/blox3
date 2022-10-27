@@ -760,14 +760,14 @@ header {
       line-height: 19px;
     } */
   }
+}
 
-  .btn:first-child:hover,
-  :not(.btn-check)+.btn:hover {
-    color: $input-bg-color;
-    background: $button-bg-color;
-    opacity: 0.8;
-    border-color: transparent;
-  }
+.btn:first-child:hover,
+:not(.btn-check)+.btn:hover {
+  color: $input-bg-color;
+  background: $button-bg-color;
+  opacity: 0.8;
+  border-color: transparent;
 }
 
 main {
@@ -2664,7 +2664,8 @@ main {
     background: #414141;
   }
 
-  .item:focus-visible {
+  .item:focus-visible,
+  .item:focus {
     outline: none;
   }
 
