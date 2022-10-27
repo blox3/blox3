@@ -706,8 +706,9 @@ header .bx-navbar.sticky {
     line-height: 19px;
   } */
 }
-.bx-form .btn:first-child:hover,
-.bx-form :not(.btn-check) + .btn:hover {
+
+.btn:first-child:hover,
+:not(.btn-check) + .btn:hover {
   color: #333333;
   background: #A9FF00;
   opacity: 0.8;
@@ -2474,7 +2475,8 @@ main {
 .testimonials .item.active {
   background: #414141;
 }
-.testimonials .item:focus-visible {
+.testimonials .item:focus-visible,
+.testimonials .item:focus {
   outline: none;
 }
 .testimonials .testimonials-title {
