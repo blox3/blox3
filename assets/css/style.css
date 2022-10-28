@@ -243,7 +243,12 @@ header .bx-navbar {
     padding-bottom: 16px;
     width: 100%;
     z-index: 999;
-    height: 77px;
+  }
+}
+@media (max-width: 767px) {
+  header .bx-navbar .container {
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 header .bx-navbar .navbar-brand {
@@ -252,6 +257,8 @@ header .bx-navbar .navbar-brand {
 @media (max-width: 767px) {
   header .bx-navbar .navbar-brand {
     width: calc(100% - 80px);
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 header .bx-navbar .navbar-brand img {
@@ -353,7 +360,7 @@ header .bx-navbar .navbar-nav .nav-item .nav-link:hover {
 }
 header .bx-navbar.sticky {
   background-color: rgba(0, 0, 0, 0.7) !important;
-  padding: 12px 0;
+  padding: 16px 0;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
