@@ -269,7 +269,13 @@ header {
       padding-bottom: 16px;
       width: 100%;
       z-index: 999;
-      height: 77px;
+      //height: 77px;
+    }
+    @media (max-width: 767px) {
+      .container{
+        padding-left: 16px;
+        padding-right: 16px;
+      }
     }
 
     .navbar-brand {
@@ -277,6 +283,8 @@ header {
 
       @media (max-width: 767px) {
         width: calc(100% - 80px);
+        padding-top: 0;
+        padding-bottom: 0;
       }
 
       img {
@@ -401,7 +409,7 @@ header {
 
   .bx-navbar.sticky {
     background-color: rgba(0, 0, 0, 0.7) !important;
-    padding: 12px 0;
+    padding: 16px 0;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(6px);
 
