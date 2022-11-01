@@ -3184,7 +3184,7 @@ footer {
     background: $color-green;
     color: $footer-color;
     border-radius: 12px;
-    padding: 66px 46px 0 46px;
+    padding: 50px 46px 0 46px;
 
     @media (max-width: 767px) {
       padding: 30px 20px 0 20px;
@@ -3286,7 +3286,14 @@ footer {
     font-size: 14px;
     line-height: 140%;
   }
-
+  .company-name{
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .location{
+    font-size: 14px;
+    line-height: 1.5;
+  }
   .deco {
     @media (max-width: 1400px) {
       img {
