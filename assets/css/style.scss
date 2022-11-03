@@ -1151,6 +1151,11 @@ main {
         dd {
           color: $white-color;
           margin-bottom: 0;
+          word-break: break-word;
+          a{
+            color: $white-color;
+            text-decoration: none;
+          }
         }
       }
     }

@@ -1055,6 +1055,11 @@ main {
 .contact-page .bx-banner .info dl dd {
   color: #fff;
   margin-bottom: 0;
+  word-break: break-word;
+}
+.contact-page .bx-banner .info dl dd a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .about-page .bx-banner .container {
