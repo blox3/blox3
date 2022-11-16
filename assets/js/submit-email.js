@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 var ListQuestion = [
     {
-        question: "What is Blox3",
+        question: "What is Blox3?",
         answer: "Blox3 is a new fintech platform that connects users to a network of financially regulated institutions to grow their money faster, investing directly into real-world businesses. Blox3 gives users access to growth previously only accessible to institutions."
     },
     {
@@ -34,7 +34,7 @@ var ListQuestion = [
     },
     {
         question:"Where does Blox3 store my assets?",
-        answer: "When you deposit your assets with us, they will be held by our custodial partner, <a href='#'>Fireblocks, #1 Digital Asset Platform for Institutions. Asset Custody, Transfer & Settlement Solution.</a>"
+        answer: "When you deposit your assets with us, they will be held by our custodial partner, <a href='https://www.fireblocks.com/' target='_blank'>Fireblocks, #1 Digital Asset Platform for Institutions. Asset Custody, Transfer & Settlement Solution.</a>"
     }
 ]
 $(document).ready(function () {
