@@ -343,7 +343,6 @@ header .bx-navbar .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
 header .bx-navbar .navbar-nav .nav-item .nav-link {
   padding-left: 32px;
   padding-right: 32px;
-  font-family: "Sen", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
