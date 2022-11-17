@@ -2981,11 +2981,15 @@ footer .text {
 }
 footer .company-name {
   font-weight: 600;
-  font-size: 14px;
 }
 footer .location {
   font-size: 14px;
   line-height: 1.5;
+}
+@media (max-width: 991px) {
+  footer .location {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 1400px) {
   footer .deco img {

@@ -3292,11 +3292,13 @@ footer {
   }
   .company-name{
     font-weight: 600;
-    font-size: 14px;
   }
   .location{
     font-size: 14px;
     line-height: 1.5;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
   }
   .deco {
     @media (max-width: 1400px) {
