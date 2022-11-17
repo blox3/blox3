@@ -235,7 +235,7 @@ header .bx-navbar {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 @media (max-width: 991px) {
   header .bx-navbar {
@@ -343,7 +343,6 @@ header .bx-navbar .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
 header .bx-navbar .navbar-nav .nav-item .nav-link {
   padding-left: 32px;
   padding-right: 32px;
-  font-family: "Sen", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -1055,6 +1054,11 @@ main {
 .contact-page .bx-banner .info dl dd {
   color: #fff;
   margin-bottom: 0;
+  word-break: break-word;
+}
+.contact-page .bx-banner .info dl dd a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .about-page .bx-banner .container {
@@ -2977,11 +2981,15 @@ footer .text {
 }
 footer .company-name {
   font-weight: 600;
-  font-size: 14px;
 }
 footer .location {
   font-size: 14px;
   line-height: 1.5;
+}
+@media (max-width: 991px) {
+  footer .location {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 1400px) {
   footer .deco img {

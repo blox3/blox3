@@ -262,7 +262,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 3;
 
     @media (max-width: 991px) {
       padding-top: 16px;
@@ -388,7 +388,6 @@ header {
         .nav-link {
           padding-left: 32px;
           padding-right: 32px;
-          font-family: $heading-font-family;
           font-weight: 400;
           font-size: 18px;
           line-height: 22px;
@@ -1151,6 +1150,11 @@ main {
         dd {
           color: $white-color;
           margin-bottom: 0;
+          word-break: break-word;
+          a{
+            color: $white-color;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -3288,11 +3292,13 @@ footer {
   }
   .company-name{
     font-weight: 600;
-    font-size: 14px;
   }
   .location{
     font-size: 14px;
     line-height: 1.5;
+    @media (max-width: 991px) {
+      margin-bottom: 30px;
+    }
   }
   .deco {
     @media (max-width: 1400px) {

@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 var ListQuestion = [
     {
-        question: "What is Blox3",
+        question: "What is Blox3?",
         answer: "Blox3 is a new fintech platform that connects users to a network of financially regulated institutions to grow their money faster, investing directly into real-world businesses. Blox3 gives users access to growth previously only accessible to institutions."
     },
     {
@@ -19,6 +19,22 @@ var ListQuestion = [
     {
         question: "How can I involve in Blox3 community?",
         answer: "The Blox3 community is open to everyone. Take the first step on your Blox3 journey by joining the <a href='https://discord.gg/4zUvcdK7DZ' target='_blank'>Official Blox3 Discord Community</a>"
+    },
+    {
+        question:"What is KYC, and why should I complete it?",
+        answer: "KYC, also known as Know Your Customer is a way for Blox3 to securely verify your account so that no one can create an account using your identity. We do this by integrating your proof of address and proof of identity to your account. Anyone trying to circumvent this process will be unable to pass KYC. Restricted individuals will have severe restrictions on their withdrawal limits, thus limiting the ability to move funds for malevolent purposes."
+    },
+    {
+        question:"How does Blox3 offer a high return?",
+        answer: "Blox3 connects your money to regulated borrowers who pay higher interest for access to your capital. Blox3 only works with proven financial institutions, lending just 50% LTV with the ability to rapidly liquidate in the event of default."
+    },
+    {
+        question:"Why should I use Blox3?",
+        answer: "<p>Blox3’s cross-border investment strategy allows investors new opportunities to invest in enterprises and emerging markets, leveraging the global market to minimize risk while providing consistent yield. The traditional banking practices of the past are gone, and people are continually looking for new ways to maximize their savings returns. Central banks cannot raise rates to match CPI without crashing the global market, leaving most markets with extremely low if not negative real interest rates.</p><p>Blox3 offers alternative and safe investments, allowing the user freedom to choose between different base asset portfolios, each diversified with leading global businesses to prevent risk, opening up brand new markets to the retail customer. Blox3 streamlines this process, so you can begin to earn the moment you make your first deposit.</p>"
+    },
+    {
+        question:"Where does Blox3 store my assets?",
+        answer: "When you deposit your assets with us, they will be held by our custodial partner, <a href='https://www.fireblocks.com/' target='_blank'>Fireblocks, #1 Digital Asset Platform for Institutions. Asset Custody, Transfer & Settlement Solution.</a>"
     }
 ]
 $(document).ready(function () {
@@ -83,10 +99,10 @@ document.getElementById("mc-embedded-subscribe").addEventListener("click", funct
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Blox3'
+                projectId: '11afffcf-a990-45b3-805e-5bd871c08bcd'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
@@ -108,10 +124,10 @@ document.getElementById("mc-embedded-subscribe1").addEventListener("click", func
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Blox3'
+                projectId: '11afffcf-a990-45b3-805e-5bd871c08bcd'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
@@ -131,10 +147,10 @@ document.getElementById("mc-embedded-subscribe1").addEventListener("click", func
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Blox3'
+                projectId: '11afffcf-a990-45b3-805e-5bd871c08bcd'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
