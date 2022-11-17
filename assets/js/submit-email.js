@@ -99,10 +99,10 @@ document.getElementById("mc-embedded-subscribe").addEventListener("click", funct
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Blox3'
+                projectId: '11afffcf-a990-45b3-805e-5bd871c08bcd'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
@@ -124,10 +124,10 @@ document.getElementById("mc-embedded-subscribe1").addEventListener("click", func
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Blox3'
+                projectId: '11afffcf-a990-45b3-805e-5bd871c08bcd'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
@@ -147,10 +147,10 @@ document.getElementById("mc-embedded-subscribe1").addEventListener("click", func
     if (validateEmail(email)) {
         $.ajax({
             type: 'post',
-            url: 'https://subscribe.metabase.build',
+            url: 'https://mail-srv.pikasso.xyz/waiting_list',
             data: JSON.stringify({
                 email: email,
-                project: 'Blox3'
+                projectId: '11afffcf-a990-45b3-805e-5bd871c08bcd'
             }),
             contentType: "application/json; charset=utf-8",
             success: function (res) {
