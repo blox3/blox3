@@ -43,7 +43,7 @@ $(document).ready(function () {
 function showList() {
     var questions = "";
     for (let key = 0; key < ListQuestion.length; key++) {
-
+        if (key === 5) {continue;}
         questions = '<div class="accordion-item wow fadeInUp">'
             + '<h2 class="accordion-header" id="questions' + key + '">'
             + '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + key + '" aria-expanded="false" aria-controls="collapse' + key + '">' + ListQuestion[key].question + '</button>'
@@ -64,7 +64,7 @@ function searchQuestion() {
 
     if (text == "") {
         for (let key = 0; key < ListQuestion.length; key++) {
-
+            if (key === 5) {break;}
             questions = '<div class="accordion-item wow fadeInUp">'
                 + '<h2 class="accordion-header" id="questions' + key + '">'
                 + '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse' + key + '" aria-expanded="false" aria-controls="collapse' + key + '">' + ListQuestion[key].question + '</button>'
